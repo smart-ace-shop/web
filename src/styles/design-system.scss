@@ -5,11 +5,11 @@
 :root {
   // Paddings
   @include cascadeDown($mobileBreakpoint, (
-    --p-level-1: 56px,
-    --p-level-2: 32px,
-    --p-level-3: 24px,
-    --p-level-4: 16px,
-    --p-level-5: 8px,
+    --p-level-1: 56px, // CHANGE
+    --p-level-2: 32px, // CHANGE
+    --p-level-3: 24px, // CHANGE
+    --p-level-4: 16px, // CHANGE
+    --p-level-5: 8px, // CHANGE
   ));
 
   // Headings
@@ -30,5 +30,5 @@
   ));
 
   font-size: var(--p20);
-  line-height: 140%;
+  line-height: normal;
 }
