@@ -1,1 +1,1 @@
-export const APP_NAME = 'Next Template';
+export const APP_NAME = 'SmartAce';
