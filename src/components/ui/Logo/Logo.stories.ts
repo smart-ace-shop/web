@@ -31,3 +31,12 @@ export const Colored: Story = {
     variant: 'colored',
   },
 };
+
+export const PermanentColored: Story = {
+  name: 'Permanent colored',
+  args: {
+    ...sharedProps,
+    variant: 'permanentColored',
+    noText: true,
+  },
+};
