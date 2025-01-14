@@ -1,18 +1,14 @@
 import type { Metadata } from 'next';
-import { IBM_Plex_Sans } from 'next/font/google';
 import type { ReactNode } from 'react';
 
-import { APP_NAME } from '@/app/constants';
+import { APP_NAME, MAIN_FONT } from '@/app/constants';
 import { CoreLayout, Providers } from '@/src/components/layout';
 import { env } from '@/src/utils/env';
 import { generateOpenGraph, generateStaticMetadata } from '@/src/utils/seo';
 
 import './globals.scss';
 
-const mainFont = IBM_Plex_Sans({
-  subsets: ['latin', 'cyrillic'],
-  weight: ['100', '200', '300', '400', '500', '600', '700'],
-});
+const mainFont = MAIN_FONT;
 
 export async function generateMetadata(): Promise<Metadata> {
   const CANONICAL_URL = env.CANONICAL_URL;
